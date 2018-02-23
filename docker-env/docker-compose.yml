@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+  db:
+    build: './postgres/'
+    environment:
+      POSTGRES_DB: '${PRJ_DB_NAME:-logs_analysis}'
+      POSTGRES_USER: '${PRJ_DB_USER:-logs_analysis}'
+      POSTGRES_PASSWORD_FILE: '/run/secrets/db_password'
+    secrets:
+      - 'db_password'
+    ports:
+      - '${PRJ_DB_PORT:-63322}:5432'
+  adminer:
+    image: 'adminer:latest'
+    ports:
+      - '${PRJ_WEB_PORT:-63323}:8080'
+secrets:
+  db_password:
+    file: './db-password.txt'

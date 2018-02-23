@@ -2,6 +2,9 @@
 # JetBrains IDEs
 .idea/
 
+# Configuration files which should not get deployed
+docker-env/db-password.txt
+
 ### OS templates template
 ## Linux template
 # automatically generated backup file by an (text) editor or similar program
