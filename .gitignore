@@ -4,6 +4,7 @@
 
 # Configuration files which should not get deployed
 docker-env/db-password.txt
+config.ini
 
 ### OS templates template
 ## Linux template

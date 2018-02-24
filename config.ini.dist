@@ -1,0 +1,6 @@
+[DB]
+name = logs_analysis
+user = logs_analysis
+password = MYSECRETPASSWORD
+host = localhost
+port = 63322

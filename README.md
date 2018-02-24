@@ -2,6 +2,11 @@
 
 This is the "logs analysis" project for the Udacity Full Stack Nanodegree Program.
 
+# Project setup
+Copy `config.ini.dist` to `config.ini` and insert appropriate content.
+
+Run the `logs-analysis.py` script to get the statistics.
+
 # Docker environment setup
 Rename all *.deploy files inside the docker-env folder and insert appropriate content.
 
