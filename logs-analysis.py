@@ -91,6 +91,6 @@ print("3. On which days did more than 1% of requests lead to errors?")
 errors = error_days(db_con)
 for error in errors:
     print(
-        error[0].strftime('%Y-%m-%d') + " - "
-        + str(round(error[1], 2)) + '% errors'
+        error[0].strftime('%Y-%m-%d') + " - " +
+        str(round(error[1], 2)) + '% errors'
     )
