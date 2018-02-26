@@ -3,9 +3,16 @@
 This is the "logs analysis" project for the Udacity Full Stack Nanodegree Program.
 
 # Project setup
+## General
 Copy `config.ini.dist` to `config.ini` and insert appropriate content.
 
 Run the `logs-analysis.py` script to get the statistics.
+
+## DB setup
+You can use the provided Docker environment or set it up manually. For the Docker environment see below.
+
+For manual setup you need a running PostgreSQL server which can be reached by the system which should run the analyser.
+Demo data is provided inside the `./docker-env/postgres/newsdata.zip` file. Unzip it and import the SQL file into Postgres.
 
 # Docker environment setup
 Rename all *.deploy files inside the docker-env folder and insert appropriate content.
